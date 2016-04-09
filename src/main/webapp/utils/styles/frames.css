@@ -1,0 +1,77 @@
+@CHARSET "ISO-8859-1";
+
+#pageframe {
+	margin-right: auto;
+	margin-left: auto;
+	width: 1000px;
+	
+	border-width: 0px 1px 0px 1px; /* top left bottom right */
+	border-style: none solid none solid;
+	border-color: #B6B6B6;
+}
+
+#header {
+	position: relative;
+}
+
+#logo {
+	position: absolute;
+	left: 20px;
+	top: 100px;
+	
+	width: 800px;
+}
+
+#links {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+#page {
+	padding: 10px 10px 0px 10px;
+
+	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPgo8bGluZWFyR3JhZGllbnQgaWQ9Imc0MzIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4MT0iMCUiIHkxPSIxMDAlIiB4Mj0iMTAwJSIgeTI9IjAlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI0ZGRkZGRiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0ZGRkZGRiIgb2Zmc2V0PSIwLjUiLz48c3RvcCBzdG9wLWNvbG9yPSIjQjBCMEIwIiBvZmZzZXQ9IjEiLz4KPC9saW5lYXJHcmFkaWVudD4KPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNnNDMyKSIgLz4KPC9zdmc+); /* SVG as background image (IE9/Chrome/Safari/Opera) */
+	background-image: -ms-linear-gradient(bottom left, #FFFFFF 0%, #FFFFFF 50%, #B0B0B0 100%); /* IE10 Consumer Preview */
+	background-image: -moz-linear-gradient(bottom left, #FFFFFF 0%, #FFFFFF 50%, #B0B0B0 100%); /* Mozilla Firefox */
+	background-image: -o-linear-gradient(bottom left, #FFFFFF 0%, #FFFFFF 50%, #B0B0B0 100%); /* Opera */
+	background-image: -webkit-gradient(linear, left bottom, right top, color-stop(0, #FFFFFF), color-stop(0.5, #FFFFFF), color-stop(1, #B0B0B0)); /* Webkit (Safari/Chrome 10) */
+	background-image: -webkit-linear-gradient(bottom left, #FFFFFF 0%, #FFFFFF 50%, #B0B0B0 100%); /* Webkit (Chrome 11+) */
+	background-image: linear-gradient(to top right, #FFFFFF 0%, #FFFFFF 50%, #B0B0B0 100%); /* W3C Markup, IE10 Release Preview */
+	background-repeat: no-repeat;
+}
+#footer {
+	padding: 10px 10px 0px 10px;
+	
+	text-align: center;
+}
+#foot1 {
+	display: table;
+	width: 100%;
+}
+#foot2 {
+	display: table-cell;
+	padding: 0px;
+	
+	text-align: left;
+}
+#foot3 {
+	display: table-cell;
+	padding: 10px 0px 10px 0px;
+	
+	text-align: right;
+}
+#map {
+	height: 300px;
+	width: 100%;
+	border: 0px;
+	border-style: none;
+}
+
+#link {
+	background-image: url('../images/external_link-50x50.png');
+	background-size: 10px 10px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	font-style: italic;
+}
