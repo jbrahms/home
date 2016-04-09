@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<portfolios>
+	<portfolio>
+		<category>WEB</category>
+		<shortName>dianesheavenlytreats</shortName>
+		<name>Diane's Heavenly Treats</name>
+		<thumbnail>utils/images/portfolio/dianesheavenlytreats/thumbnail.png</thumbnail>
+		<pictures>
+			<image>
+				<path>utils/images/portfolio/dianesheavenlytreats/image1.jpg</path>
+				<description>Landing page</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/dianesheavenlytreats/image2.jpg</path>
+				<description>Product page</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/dianesheavenlytreats/image3.jpg</path>
+				<description>Specialties page</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/dianesheavenlytreats/image4.jpg</path>
+				<description>About</description>
+			</image>
+		</pictures>
+		<company>Diane's Heavenly Treats</company>
+		<notes>
+			<note>Complete design and implemenation</note>
+			<note>Photos</note>
+			<note>Hosting</note>
+		</notes>
+		<url>http://www.dianesheavenlytreats.com</url>
+	</portfolio>
+
+	<portfolio>
+		<category>WEB</category>
+		<shortName>lowfare</shortName>
+		<name>LOW.Fare</name>
+		<thumbnail>utils/images/portfolio/lowfare/thumbnail.jpg</thumbnail>
+		<pictures>
+			<image>
+				<path>utils/images/portfolio/lowfare/image1.jpg</path>
+				<description>Catalog (Front page)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/lowfare/image2.jpg</path>
+				<description>Start page</description>
+			</image>
+		</pictures>
+		<company>Partners Solutions GmbH</company>
+		<notes>
+			<note>Complete design and implemenation</note>
+		</notes>
+		<url></url>
+	</portfolio>
+
+	<portfolio>
+		<category>WEB</category>
+		<shortName>tripone</shortName>
+		<name>TRIP.One</name>
+		<thumbnail>utils/images/portfolio/tripone/thumbnail.jpg</thumbnail>
+		<pictures>
+			<image>
+				<path>utils/images/portfolio/tripone/image1.jpg</path>
+				<description>Catalog (Front page)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/tripone/image2.jpg</path>
+				<description>Main page</description>
+			</image>
+		</pictures>
+		<company>Partners Solutions GmbH</company>
+		<notes>
+			<note>Complete design and implemenation</note>
+		</notes>
+		<url></url>
+	</portfolio>
+
+	<portfolio>
+		<category>WEB</category>
+		<shortName>webadmin</shortName>
+		<name>WEB.Administration Tool</name>
+		<thumbnail>utils/images/portfolio/dianesheavenlytreats/thumbnail.png</thumbnail>
+		<pictures>
+			<image>
+				<path>utils/images/portfolio/webadmin/image1.png</path>
+				<description>Image No.1</description>
+			</image>
+		</pictures>
+		<company>Partners Solutions GmbH</company>
+		<notes>
+			<note>Complete design and implemenation</note>
+		</notes>
+		<url></url>
+	</portfolio>
+
+	<portfolio>
+		<category>GUI</category>
+		<shortName>accounting</shortName>
+		<name>Accounting Tool</name>
+		<thumbnail>utils/images/portfolio/dianesheavenlytreats/thumbnail.png</thumbnail>
+		<pictures>
+			<image>
+				<path>utils/images/portfolio/accounting/image1.png</path>
+				<description>Image No.1</description>
+			</image>
+		</pictures>
+		<company>SF Web Solution</company>
+		<notes>
+			<note>Complete design and implemenation</note>
+		</notes>
+		<url></url>
+	</portfolio>
+
+	<portfolio>
+		<category>GUI</category>
+		<shortName>airrout</shortName>
+		<name>AIRROUT.Update Tool</name>
+		<thumbnail>utils/images/portfolio/airroutupdate/thumbnail.png</thumbnail>
+		<pictures>
+			<image>
+				<path>utils/images/portfolio/airroutupdate/image01.png</path>
+				<description>Main Windows</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/airroutupdate/image02.png</path>
+				<description>Path selections</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/airroutupdate/image03.png</path>
+				<description>About</description>
+			</image>
+		</pictures>
+		<company>Partners Solutions GmbH</company>
+		<notes>
+			<note>Complete design and implemenation</note>
+		</notes>
+		<url></url>
+	</portfolio>
+
+	<portfolio>
+		<category>GUI</category>
+		<shortName>macsadmin</shortName>
+		<name>MACS Administation-Tool</name>
+		<thumbnail>utils/images/portfolio/dianesheavenlytreats/thumbnail.png</thumbnail>
+		<pictures>
+			<image>
+				<path>utils/images/portfolio/macsadmin/image1.png</path>
+				<description>Image No.1</description>
+			</image>
+		</pictures>
+		<company>Partners Solutions GmbH</company>
+		<notes>
+			<note>Complete design and implemenation</note>
+		</notes>
+		<url></url>
+	</portfolio>
+</portfolios>

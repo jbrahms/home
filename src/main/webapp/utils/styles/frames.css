@@ -18,8 +18,8 @@
 	position: absolute;
 	left: 20px;
 	top: 100px;
-	
-	width: 800px;
+	right: 100px;
+	bottom: 100px;
 }
 
 #links {
