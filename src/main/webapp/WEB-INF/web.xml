@@ -6,11 +6,11 @@
 	 xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
 
 	<!-- Display -->
-	<display-name>SF Web Solution - Home-Page</display-name>
+	<display-name>SF Web Solution - Home-Page [Redesign 2016]</display-name>
 	
     <!-- Welcome file lists -->
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.php</welcome-file>
     </welcome-file-list>
 
 </web-app>
