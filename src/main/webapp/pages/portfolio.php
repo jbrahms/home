@@ -6,6 +6,8 @@ $portfolio = new Portfolio("../data/portfolio.xml");
 $portfolioWeb = $portfolio->getPortfolioByCategory("WEB");
 $portfolioGui = $portfolio->getPortfolioByCategory("GUI");
 $portfolioApp = $portfolio->getPortfolioByCategory("APP");
+$portfolioGph = $portfolio->getPortfolioByCategory("GPH");
+$portfolioPht = $portfolio->getPortfolioByCategory("PHT");
 ?>
 <!DOCTYPE html>
 <html>
@@ -121,6 +123,12 @@ $portfolioApp = $portfolio->getPortfolioByCategory("APP");
 								<?php if ($portfolio->hasPortfolioOfCategory("APP")) { ?>
 									<li><a href="portfolio.php#mobile">Mobile</a></li>
 								<?php } ?>
+								<?php if ($portfolio->hasPortfolioOfCategory("GPH")) { ?>
+									<li><a href="portfolio.php#mobile">Graphical Design</a></li>
+								<?php } ?>
+								<?php if ($portfolio->hasPortfolioOfCategory("PHT")) { ?>
+									<li><a href="portfolio.php#mobile">Photography</a></li>
+								<?php } ?>
 							</ul>
 						</li>
 						<li><a href="products.php">Products</a></li>
@@ -172,7 +180,7 @@ $portfolioApp = $portfolio->getPortfolioByCategory("APP");
 							The following pages include the Portfolio for the various applications for web and otherwise.<br>
 							Feel free to check all of them.<br>
 							&nbsp;<br>
-							&nbsp;<br>
+							This portfolio is used to showcase the applications but also the the usage of specific tools while creating.<br>
 							&nbsp;<br>
 							For any additional information, please contact us using any of the available possibilities you find under <a href="contact.php"><span class="link"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>&nbsp;Contact</span></a>.<br>
 							Or just email us your request using: <span class="link"><a href="mailto:jay.brahms@sfwebsolution.com">jay.brahms@sfwebsolution.com</a></span>
@@ -192,7 +200,7 @@ $portfolioApp = $portfolio->getPortfolioByCategory("APP");
 						</div>
 						<div class="isRow">
 							<div class="content">
-								<div class="row">
+								<div align="left" class="row">
 									<?php for ($i=0; $i<count($portfolioWeb); $i++) { ?>
 										<div class="col-xs-6 col-md-3">
 											<div class="thumbnail">
@@ -254,6 +262,60 @@ $portfolioApp = $portfolio->getPortfolioByCategory("APP");
 													<img src="../<?php echo $portfolioApp[$i]['thumbnail'] ?>" alt="<?php echo $portfolioApp[$i]['name'] ?>" width="627" height="470">
 												</a>
 												<h6><?php echo $portfolioApp[$i]['name'] ?></h6>
+											</div>
+										</div>
+									<?php } ?>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+			<?php if ($portfolio->hasPortfolioOfCategory("GPH")) { ?>
+				<div id="mobile" class="col-xs-12">
+					<div class="outer">
+						<div class="isRow">
+							<div class="header">
+								Graphical Design
+							</div>
+						</div>
+						<div class="isRow">
+							<div class="content">
+								<div class="row">
+									<?php for ($i=0; $i<count($portfolioGph); $i++) { ?>
+										<div class="col-xs-6 col-md-3">
+											<div class="thumbnail">
+												<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioGph[$i]['shortName'] ?>">
+													<img src="../<?php echo $portfolioGph[$i]['thumbnail'] ?>" alt="<?php echo $portfolioGph[$i]['name'] ?>" width="627" height="470">
+												</a>
+												<h6><?php echo $portfolioGph[$i]['name'] ?></h6>
+											</div>
+										</div>
+									<?php } ?>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<?php } ?>
+			<?php if ($portfolio->hasPortfolioOfCategory("PHT")) { ?>
+				<div id="mobile" class="col-xs-12">
+					<div class="outer">
+						<div class="isRow">
+							<div class="header">
+								Photography
+							</div>
+						</div>
+						<div class="isRow">
+							<div class="content">
+								<div class="row">
+									<?php for ($i=0; $i<count($portfolioPht); $i++) { ?>
+										<div class="col-xs-6 col-md-3">
+											<div class="thumbnail">
+												<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioPht[$i]['shortName'] ?>">
+													<img src="../<?php echo $portfolioPht[$i]['thumbnail'] ?>" alt="<?php echo $portfolioPht[$i]['name'] ?>" width="627" height="470">
+												</a>
+												<h6><?php echo $portfolioPht[$i]['name'] ?></h6>
 											</div>
 										</div>
 									<?php } ?>

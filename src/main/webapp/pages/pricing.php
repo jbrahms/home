@@ -67,6 +67,12 @@ $portfolio = new Portfolio("../data/portfolio.xml");
 								<?php if ($portfolio->hasPortfolioOfCategory("APP")) { ?>
 									<li><a href="portfolio.php#mobile">Mobile</a></li>
 								<?php } ?>
+								<?php if ($portfolio->hasPortfolioOfCategory("GPH")) { ?>
+									<li><a href="portfolio.php#mobile">Graphical Design</a></li>
+								<?php } ?>
+								<?php if ($portfolio->hasPortfolioOfCategory("PHT")) { ?>
+									<li><a href="portfolio.php#mobile">Photography</a></li>
+								<?php } ?>
 							</ul>
 						</li>
 						<li><a href="products.php">Products</a></li>

@@ -394,6 +394,13 @@ h6 {
 	box-shadow: 2px 2px 2px rgb(125,125,125);
 }
 
+.carousel-inner .item {
+	background-color: grey;
+}
+.carousel-inner .carousel-caption {
+	font-weight: bold;
+}
+
 .width50 {
 	width: 50%;
 }

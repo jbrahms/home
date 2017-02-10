@@ -35,17 +35,97 @@
 
 	<portfolio>
 		<category>WEB</category>
+		<shortName>scrubyums</shortName>
+		<name>Scrub Yums</name>
+		<thumbnail>utils/images/portfolio/scrubyums/thumbnail.png</thumbnail>
+		<pictures>
+			<image>
+				<path>utils/images/portfolio/scrubyums/image1.jpg</path>
+				<description>Home page</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/scrubyums/image2.jpg</path>
+				<description>Product listing</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/scrubyums/image3.jpg</path>
+				<description>Product page</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/scrubyums/image4.jpg</path>
+				<description>Product page</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/scrubyums/image5.jpg</path>
+				<description>Product listing</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/scrubyums/image6.png</path>
+				<description>Shopping cart</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/scrubyums/image7.png</path>
+				<description>Payment</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/scrubyums/image8.jpg</path>
+				<description>Mobile view (Front page)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/scrubyums/image9.png</path>
+				<description>Mobile view (menu)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/scrubyums/image10.jpg</path>
+				<description>Mobile view (about)</description>
+			</image>
+		</pictures>
+		<company>Scrub Yums - It's Bathlicious!</company>
+		<notes>
+			<note>Complete design and implemenation</note>
+			<note>Photos</note>
+			<note>Hosting</note>
+		</notes>
+		<url>http://www.scrubyums.com</url>
+	</portfolio>
+
+	<portfolio>
+		<category>WEB</category>
 		<shortName>lowfare</shortName>
 		<name>LOW.Fare</name>
 		<thumbnail>utils/images/portfolio/lowfare/thumbnail.jpg</thumbnail>
 		<pictures>
 			<image>
-				<path>utils/images/portfolio/lowfare/image1.jpg</path>
-				<description>Catalog (Front page)</description>
+				<path>utils/images/portfolio/lowfare/image1.png</path>
+				<description>Version 5 - Search</description>
 			</image>
 			<image>
-				<path>utils/images/portfolio/lowfare/image2.jpg</path>
-				<description>Start page</description>
+				<path>utils/images/portfolio/lowfare/image2.png</path>
+				<description>Complete AJAX compatibility (Calendar)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/lowfare/image3.png</path>
+				<description>Version 5 - Wait pages</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/lowfare/image4.png</path>
+				<description>Version 5 - Fare selection</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/lowfare/image5.png</path>
+				<description>Version 5 - Fare details</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/lowfare/image6.png</path>
+				<description>Version 4 - Start page</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/lowfare/image7.png</path>
+				<description>Version 4 - Fares</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/lowfare/image8.png</path>
+				<description>Versoin 4 - Fare selection</description>
 			</image>
 		</pictures>
 		<company>Partners Solutions GmbH</company>
@@ -81,11 +161,51 @@
 		<category>WEB</category>
 		<shortName>webadmin</shortName>
 		<name>WEB.Administration Tool</name>
-		<thumbnail>utils/images/portfolio/dianesheavenlytreats/thumbnail.png</thumbnail>
+		<thumbnail>utils/images/portfolio/webadmin/thumbnail.jpg</thumbnail>
 		<pictures>
 			<image>
 				<path>utils/images/portfolio/webadmin/image1.png</path>
-				<description>Image No.1</description>
+				<description>Login</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/webadmin/image2.jpg</path>
+				<description>Bootstrap usage (popup)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/webadmin/image3.png</path>
+				<description>jQuery uage (ajax)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/webadmin/image4.png</path>
+				<description>Style and Design options</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/webadmin/image5.png</path>
+				<description>Styles</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/webadmin/image6.png</path>
+				<description>Bootstrap usage (tooltip)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/webadmin/image7.png</path>
+				<description>Bootstrap usage (popup)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/webadmin/image8.png</path>
+				<description>Mobile view (responsive HTML)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/webadmin/image9.png</path>
+				<description>Mobile view (responsive HTML)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/webadmin/image10.png</path>
+				<description>Mobile view (responsive HTML)</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/webadmin/image11.png</path>
+				<description>Mobile view (responsive HTML)</description>
 			</image>
 		</pictures>
 		<company>Partners Solutions GmbH</company>
@@ -99,14 +219,46 @@
 		<category>GUI</category>
 		<shortName>accounting</shortName>
 		<name>Accounting Tool</name>
-		<thumbnail>utils/images/portfolio/dianesheavenlytreats/thumbnail.png</thumbnail>
+		<thumbnail>utils/images/portfolio/accounting/thumbnail.png</thumbnail>
 		<pictures>
 			<image>
 				<path>utils/images/portfolio/accounting/image1.png</path>
-				<description>Image No.1</description>
+				<description>Main window</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/accounting/image2.png</path>
+				<description>Account configuration</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/accounting/image3.png</path>
+				<description>Bank configuration</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/accounting/image4.png</path>
+				<description>User configuration</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/accounting/image5.png</path>
+				<description>Transactions</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/accounting/image6.png</path>
+				<description>Progress</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/accounting/image7.png</path>
+				<description>Closing</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/accounting/image8.png</path>
+				<description>Options</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/accounting/image9.png</path>
+				<description>Database configruation</description>
 			</image>
 		</pictures>
-		<company>SF Web Solution</company>
+		<company>JKSoft</company>
 		<notes>
 			<note>Complete design and implemenation</note>
 		</notes>
@@ -140,19 +292,32 @@
 	</portfolio>
 
 	<portfolio>
-		<category>GUI</category>
-		<shortName>macsadmin</shortName>
-		<name>MACS Administation-Tool</name>
-		<thumbnail>utils/images/portfolio/dianesheavenlytreats/thumbnail.png</thumbnail>
+		<category>GPH</category>
+		<shortName>futurepositive</shortName>
+		<name>Kippy Marks - Future Positive</name>
+		<thumbnail>utils/images/portfolio/futurepositive/thumbnail.jpg</thumbnail>
 		<pictures>
 			<image>
-				<path>utils/images/portfolio/macsadmin/image1.png</path>
-				<description>Image No.1</description>
+				<path>utils/images/portfolio/futurepositive/image1.jpg</path>
+				<description>Front leave</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/futurepositive/image2.jpg</path>
+				<description>Artwork for inner leave</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/futurepositive/image3.jpg</path>
+				<description>Artwork for inlet</description>
+			</image>
+			<image>
+				<path>utils/images/portfolio/futurepositive/image4.jpg</path>
+				<description>CD</description>
 			</image>
 		</pictures>
-		<company>Partners Solutions GmbH</company>
+		<company>KiMA Exclusives</company>
 		<notes>
-			<note>Complete design and implemenation</note>
+			<note>Conception, design and creation</note>
+			<note>Front Cover and Backside, Inlay and CD</note>
 		</notes>
 		<url></url>
 	</portfolio>
