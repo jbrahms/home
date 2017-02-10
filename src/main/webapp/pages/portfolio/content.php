@@ -39,7 +39,7 @@ $singlePortfolio = $portfolio->getSinglePortfolio($_POST['portfolio']);
 				<?php foreach ($singlePortfolio['pictures']['image'] as &$image) { ?>
 					<?php $i++; ?>
 					<div align="center" class="item <?php if ($i == 1) { echo " active"; } ?>">
-						<img src="../<?php echo $image['path'] ?>" alt="<?php echo $image['description'] ?>" style="max-height:500px;">
+						<img src="../<?php echo $image['path'] ?>" alt="<?php echo $image['description'] ?>" style="max-height:480px;">
 						<div class="carousel-caption">
 							<?php echo $image['description'] ?>
 						</div>

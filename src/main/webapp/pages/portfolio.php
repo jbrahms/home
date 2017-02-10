@@ -8,6 +8,8 @@ $portfolioGui = $portfolio->getPortfolioByCategory("GUI");
 $portfolioApp = $portfolio->getPortfolioByCategory("APP");
 $portfolioGph = $portfolio->getPortfolioByCategory("GPH");
 $portfolioPht = $portfolio->getPortfolioByCategory("PHT");
+
+$portfolioCount = 0;
 ?>
 <!DOCTYPE html>
 <html>
@@ -83,289 +85,322 @@ $portfolioPht = $portfolio->getPortfolioByCategory("PHT");
 		</div>
 	</div>
 
-	<div id="pageTop" class="container pageBackground pageBorder">
-		<div class="row">
-			<div class="col-md-12">
-				<img align="top" alt="SF Web Solution - Header" src="../utils/images/sfbackground-1500x369.jpg" border="0" width="100%">
-			</div>
-		</div>
-
-		<nav class="navbar navbar-default" style="margin-top: 20px;">
-			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header" style="margin: 0px;">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-sfsw" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">
-						<img alt="SF Web Solution - Logo" src="../utils/images/sfwebsolution_logo-1200x120.png" width ="242" height="20">						
-					</a>
+	<div class="page-wrapper pageBackground pageBorder">
+		<div id="pageTop" class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+					<img align="top" alt="SF Web Solution - Header" src="../utils/images/sfbackground-1500x369.jpg" border="0" width="100%">
 				</div>
+			</div>
+	
+			<nav class="navbar navbar-default" style="margin-top: 20px;">
+				<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header" style="margin: 0px;">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-sfsw" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img alt="SF Web Solution - Logo" src="../utils/images/sfwebsolution_logo-1200x120.png" width ="242" height="20">						
+						</a>
+					</div>
+				
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="navbar-sfsw">
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="home.php">Home</a></li>
+							<li class="dropdown active">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="sr-only">(current)</span><span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="portfolio.php">General</a></li>
+									<li role="separator" class="divider"></li>
+									<?php if ($portfolio->hasPortfolioOfCategory("WEB")) { ?>
+										<li><a href="portfolio.php#web">Web</a></li>
+									<?php } ?>
+									<?php if ($portfolio->hasPortfolioOfCategory("GUI")) { ?>
+										<li><a href="portfolio.php#application">Application</a></li>
+									<?php } ?>
+									<?php if ($portfolio->hasPortfolioOfCategory("APP")) { ?>
+										<li><a href="portfolio.php#mobile">Mobile</a></li>
+									<?php } ?>
+									<?php if ($portfolio->hasPortfolioOfCategory("GPH")) { ?>
+										<li><a href="portfolio.php#graphic">Graphical Design</a></li>
+									<?php } ?>
+									<?php if ($portfolio->hasPortfolioOfCategory("PHT")) { ?>
+										<li><a href="portfolio.php#photo">Photography</a></li>
+									<?php } ?>
+								</ul>
+							</li>
+							<li><a href="products.php">Products</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pricing<span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="pricing.php#startups">For Startups</a></li>
+									<li><a href="pricing.php#smallbusiness">For Small Business</a></li>
+									<li><a href="pricing.php#corporations">For Large Corporations</a></li>
+								</ul>
+							</li>
+							<li><a href="about.php">About</a></li>
+							<li><a href="contact.php">Contact</a></li>
+						</ul>
+						<hr class="sociaMediaDivider">
+	
+						<ul class="nav navbar-nav navbar-right navbarRightMargin">
+							<li>
+								<a href="http://www.facebook.com/sfwebsolution" target="new" class="socialMediaLink">
+									<img alt="Facebook" src="../utils/images/facebook-512x512.png" height="40px">
+									<span class="socialMediaDescription">&nbsp;Follow us on Facebook</span>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.google.com/+SFWebSolutionSanFrancisco" target="new" class="socialMediaLink">
+									<img alt="Facebook" src="../utils/images/goggleplus-512x512.png" height="40px">
+									<span class="socialMediaDescription">&nbsp;Follow us on Goggle+</span>
+								</a>
+							</li>
+							<li>
+								<a class="socialMediaLink" href="http://www.linkedin.com/company/sf-web-solution" target="new">
+									<img alt="LinkedIn" src="../utils/images/linkedin-512x512.png" height="40px">
+									<span class="socialMediaDescription">&nbsp;Follow us on LinkedIn</span>
+								</a>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container -->
+			</nav>
 			
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="navbar-sfsw">
-					<ul class="nav navbar-nav navbar-left">
-						<li><a href="home.php">Home</a></li>
-						<li class="dropdown active">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio<span class="sr-only">(current)</span><span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="portfolio.php">General</a></li>
-								<li role="separator" class="divider"></li>
-								<?php if ($portfolio->hasPortfolioOfCategory("WEB")) { ?>
-									<li><a href="portfolio.php#web">Web</a></li>
-								<?php } ?>
-								<?php if ($portfolio->hasPortfolioOfCategory("GUI")) { ?>
-									<li><a href="portfolio.php#application">Application</a></li>
-								<?php } ?>
-								<?php if ($portfolio->hasPortfolioOfCategory("APP")) { ?>
-									<li><a href="portfolio.php#mobile">Mobile</a></li>
-								<?php } ?>
-								<?php if ($portfolio->hasPortfolioOfCategory("GPH")) { ?>
-									<li><a href="portfolio.php#mobile">Graphical Design</a></li>
-								<?php } ?>
-								<?php if ($portfolio->hasPortfolioOfCategory("PHT")) { ?>
-									<li><a href="portfolio.php#mobile">Photography</a></li>
-								<?php } ?>
-							</ul>
-						</li>
-						<li><a href="products.php">Products</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pricing<span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="pricing.php#startups">For Startups</a></li>
-								<li><a href="pricing.php#smallbusiness">For Small Business</a></li>
-								<li><a href="pricing.php#corporations">For Large Corporations</a></li>
-							</ul>
-						</li>
-						<li><a href="about.php">About</a></li>
-						<li><a href="contact.php">Contact</a></li>
-					</ul>
-					<hr class="sociaMediaDivider">
-
-					<ul class="nav navbar-nav navbar-right navbarRightMargin">
-						<li>
-							<a href="http://www.facebook.com/sfwebsolution" target="new" class="socialMediaLink">
-								<img alt="Facebook" src="../utils/images/facebook-512x512.png" height="40px">
-								<span class="socialMediaDescription">&nbsp;Follow us on Facebook</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.google.com/+SFWebSolutionSanFrancisco" target="new" class="socialMediaLink">
-								<img alt="Facebook" src="../utils/images/goggleplus-512x512.png" height="40px">
-								<span class="socialMediaDescription">&nbsp;Follow us on Goggle+</span>
-							</a>
-						</li>
-						<li>
-							<a class="socialMediaLink" href="http://www.linkedin.com/company/sf-web-solution" target="new">
-								<img alt="LinkedIn" src="../utils/images/linkedin-512x512.png" height="40px">
-								<span class="socialMediaDescription">&nbsp;Follow us on LinkedIn</span>
-							</a>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</div><!-- /.container -->
-		</nav>
-		
-		<div class="row">
-			<div class="col-md-12">
-				<div class="isTable">
-					<div class="isRow">
-						<div class="isCell">
-							<img align="middle" alt="SF Web Solution - Illustration" src="../utils/images/sfillustration-520x680.png" width="100px">
-						</div>
-						<div class="isCell">
-							The following pages include the Portfolio for the various applications for web and otherwise.<br>
-							Feel free to check all of them.<br>
-							&nbsp;<br>
-							This portfolio is used to showcase the applications but also the the usage of specific tools while creating.<br>
-							&nbsp;<br>
-							For any additional information, please contact us using any of the available possibilities you find under <a href="contact.php"><span class="link"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>&nbsp;Contact</span></a>.<br>
-							Or just email us your request using: <span class="link"><a href="mailto:jay.brahms@sfwebsolution.com">jay.brahms@sfwebsolution.com</a></span>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="isTable">
+						<div class="isRow">
+							<div class="isCell">
+								<img align="middle" alt="SF Web Solution - Illustration" src="../utils/images/sfillustration-520x680.png" width="100px">
+							</div>
+							<div class="isCell">
+								The following pages include the Portfolio for the various applications for web and otherwise.<br>
+								Feel free to check all of them.<br>
+								&nbsp;<br>
+								This portfolio is used to showcase the applications but also the the usage of specific tools while creating.<br>
+								&nbsp;<br>
+								For any additional information, please contact us using any of the available possibilities you find under <a href="contact.php"><span class="link"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>&nbsp;Contact</span></a>.<br>
+								Or just email us your request using: <span class="link"><a href="mailto:jay.brahms@sfwebsolution.com">jay.brahms@sfwebsolution.com</a></span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<?php if ($portfolio->hasPortfolioOfCategory("WEB")) { ?>
-				<div id="web" class="col-xs-12">
-					<div class="outer">
-						<div class="isRow">
-							<div class="header">
-								Web
+			<div class="row">
+				<?php if ($portfolio->hasPortfolioOfCategory("WEB")) { ?>
+					<div id="web" class="col-xs-12">
+						<div class="outer">
+							<div class="isRow">
+								<div class="header">
+									Web
+								</div>
 							</div>
-						</div>
-						<div class="isRow">
-							<div class="content">
-								<div align="left" class="row">
-									<?php for ($i=0; $i<count($portfolioWeb); $i++) { ?>
-										<div class="col-xs-6 col-md-3">
-											<div class="thumbnail">
-												<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioWeb[$i]['shortName'] ?>">
-													<img src="../<?php echo $portfolioWeb[$i]['thumbnail'] ?>" alt="<?php echo $portfolioWeb[$i]['name'] ?>" width="627" height="470">
-												</a>
-												<h6><?php echo $portfolioWeb[$i]['name'] ?></h6>
+							<div class="isRow">
+								<div class="content">
+									<div class="row">
+										<?php $portfolioCount = 0; ?>
+										<?php for ($i=0; $i<count($portfolioWeb); $i++) { ?>
+											<?php $portfolioCount = $portfolioCount + 1 ?>
+											<div class="col-xs-6 col-md-3">
+												<div class="thumbnail">
+													<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioWeb[$i]['shortName'] ?>">
+														<img src="../<?php echo $portfolioWeb[$i]['thumbnail'] ?>" alt="<?php echo $portfolioWeb[$i]['name'] ?>" width="627" height="470">
+													</a>
+													<h6><?php echo $portfolioWeb[$i]['name'] ?></h6>
+												</div>
 											</div>
-										</div>
-									<?php } ?>
+											<?php if ($portfolioCount == 2) { ?>
+												<div class="clearfix visible-xs-inline visible-sm-inline"></div>
+												<?php $portfolioCount = 0 ?>
+											<?php } ?>
+										<?php } ?>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			<?php } ?>
-			<?php if ($portfolio->hasPortfolioOfCategory("GUI")) { ?>
-				<div id="application" class="col-xs-12">
-					<div class="outer">
-						<div class="isRow">
-							<div class="header">
-								Desktop Applications
+				<?php } ?>
+				<?php if ($portfolio->hasPortfolioOfCategory("GUI")) { ?>
+					<div id="application" class="col-xs-12">
+						<div class="outer">
+							<div class="isRow">
+								<div class="header">
+									Desktop Applications
+								</div>
 							</div>
-						</div>
-						<div class="isRow">
-							<div class="content">
-								<div class="row">
-									<?php for ($i=0; $i<count($portfolioGui); $i++) { ?>
-										<div class="col-xs-6 col-md-3">
-											<div class="thumbnail">
-												<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioGui[$i]['shortName'] ?>">
-													<img src="../<?php echo $portfolioGui[$i]['thumbnail'] ?>" alt="<?php echo $portfolioGui[$i]['name'] ?>" width="627" height="470">
-												</a>
-												<h6><?php echo $portfolioGui[$i]['name'] ?></h6>
+							<div class="isRow">
+								<div class="content">
+									<div class="row">
+										<?php $portfolioCount = 0; ?>
+										<?php for ($i=0; $i<count($portfolioGui); $i++) { ?>
+											<?php $portfolioCount = $portfolioCount + 1 ?>
+											<div class="col-xs-6 col-md-3">
+												<div class="thumbnail">
+													<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioGui[$i]['shortName'] ?>">
+														<img src="../<?php echo $portfolioGui[$i]['thumbnail'] ?>" alt="<?php echo $portfolioGui[$i]['name'] ?>" width="627" height="470">
+													</a>
+													<h6><?php echo $portfolioGui[$i]['name'] ?></h6>
+												</div>
+												<?php if ($portfolioCount == 2) { ?>
+												<div class="clearfix visible-xs-inline visible-sm-inline"></div>
+													<?php $portfolioCount = 0 ?>
+												<?php } ?>
 											</div>
-										</div>
-									<?php } ?>
+										<?php } ?>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			<?php } ?>
-			<?php if ($portfolio->hasPortfolioOfCategory("APP")) { ?>
-				<div id="mobile" class="col-xs-12">
-					<div class="outer">
-						<div class="isRow">
-							<div class="header">
-								Mobile Applications
+				<?php } ?>
+				<?php if ($portfolio->hasPortfolioOfCategory("APP")) { ?>
+					<div id="mobile" class="col-xs-12">
+						<div class="outer">
+							<div class="isRow">
+								<div class="header">
+									Mobile Applications
+								</div>
 							</div>
-						</div>
-						<div class="isRow">
-							<div class="content">
-								<div class="row">
-									<?php for ($i=0; $i<count($portfolioApp); $i++) { ?>
-										<div class="col-xs-6 col-md-3">
-											<div class="thumbnail">
-												<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioApp[$i]['shortName'] ?>">
-													<img src="../<?php echo $portfolioApp[$i]['thumbnail'] ?>" alt="<?php echo $portfolioApp[$i]['name'] ?>" width="627" height="470">
-												</a>
-												<h6><?php echo $portfolioApp[$i]['name'] ?></h6>
+							<div class="isRow">
+								<div class="content">
+									<div class="row">
+										<?php $portfolioCount = 0; ?>
+										<?php for ($i=0; $i<count($portfolioApp); $i++) { ?>
+											<?php $portfolioCount = $portfolioCount + 1 ?>
+											<div class="col-xs-6 col-md-3">
+												<div class="thumbnail">
+													<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioApp[$i]['shortName'] ?>">
+														<img src="../<?php echo $portfolioApp[$i]['thumbnail'] ?>" alt="<?php echo $portfolioApp[$i]['name'] ?>" width="627" height="470">
+													</a>
+													<h6><?php echo $portfolioApp[$i]['name'] ?></h6>
+												</div>
+												<?php if ($portfolioCount == 2) { ?>
+												<div class="clearfix visible-xs-inline visible-sm-inline"></div>
+													<?php $portfolioCount = 0 ?>
+												<?php } ?>
 											</div>
-										</div>
-									<?php } ?>
+										<?php } ?>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			<?php } ?>
-			<?php if ($portfolio->hasPortfolioOfCategory("GPH")) { ?>
-				<div id="mobile" class="col-xs-12">
-					<div class="outer">
-						<div class="isRow">
-							<div class="header">
-								Graphical Design
+				<?php } ?>
+				<?php if ($portfolio->hasPortfolioOfCategory("GPH")) { ?>
+					<div id="graphic" class="col-xs-12">
+						<div class="outer">
+							<div class="isRow">
+								<div class="header">
+									Graphical Design
+								</div>
 							</div>
-						</div>
-						<div class="isRow">
-							<div class="content">
-								<div class="row">
-									<?php for ($i=0; $i<count($portfolioGph); $i++) { ?>
-										<div class="col-xs-6 col-md-3">
-											<div class="thumbnail">
-												<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioGph[$i]['shortName'] ?>">
-													<img src="../<?php echo $portfolioGph[$i]['thumbnail'] ?>" alt="<?php echo $portfolioGph[$i]['name'] ?>" width="627" height="470">
-												</a>
-												<h6><?php echo $portfolioGph[$i]['name'] ?></h6>
+							<div class="isRow">
+								<div class="content">
+									<div class="row">
+										<?php $portfolioCount = 0; ?>
+										<?php for ($i=0; $i<count($portfolioGph); $i++) { ?>
+											<?php $portfolioCount = $portfolioCount + 1 ?>
+											<div class="col-xs-6 col-md-3">
+												<div class="thumbnail">
+													<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioGph[$i]['shortName'] ?>">
+														<img src="../<?php echo $portfolioGph[$i]['thumbnail'] ?>" alt="<?php echo $portfolioGph[$i]['name'] ?>" width="627" height="470">
+													</a>
+													<h6><?php echo $portfolioGph[$i]['name'] ?></h6>
+												</div>
 											</div>
-										</div>
-									<?php } ?>
+											<?php if ($portfolioCount == 2) { ?>
+												<div class="clearfix visible-xs-inline visible-sm-inline"></div>
+												<?php $portfolioCount = 0 ?>
+											<?php } ?>
+										<?php } ?>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			<?php } ?>
-			<?php if ($portfolio->hasPortfolioOfCategory("PHT")) { ?>
-				<div id="mobile" class="col-xs-12">
-					<div class="outer">
-						<div class="isRow">
-							<div class="header">
-								Photography
+				<?php } ?>
+				<?php if ($portfolio->hasPortfolioOfCategory("PHT")) { ?>
+					<div id="photo" class="col-xs-12">
+						<div class="outer">
+							<div class="isRow">
+								<div class="header">
+									Photography
+								</div>
 							</div>
-						</div>
-						<div class="isRow">
-							<div class="content">
-								<div class="row">
-									<?php for ($i=0; $i<count($portfolioPht); $i++) { ?>
-										<div class="col-xs-6 col-md-3">
-											<div class="thumbnail">
-												<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioPht[$i]['shortName'] ?>">
-													<img src="../<?php echo $portfolioPht[$i]['thumbnail'] ?>" alt="<?php echo $portfolioPht[$i]['name'] ?>" width="627" height="470">
-												</a>
-												<h6><?php echo $portfolioPht[$i]['name'] ?></h6>
+							<div class="isRow">
+								<div class="content">
+									<div class="row">
+										<?php $portfolioCount = 0; ?>
+										<?php for ($i=0; $i<count($portfolioPht); $i++) { ?>
+											<?php $portfolioCount = $portfolioCount + 1 ?>
+											<div class="col-xs-6 col-md-3">
+												<div class="thumbnail">
+													<a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-portfolio="<?php echo $portfolioPht[$i]['shortName'] ?>">
+														<img src="../<?php echo $portfolioPht[$i]['thumbnail'] ?>" alt="<?php echo $portfolioPht[$i]['name'] ?>" width="627" height="470">
+													</a>
+													<h6><?php echo $portfolioPht[$i]['name'] ?></h6>
+												</div>
 											</div>
-										</div>
-									<?php } ?>
+											<?php if ($portfolioCount == 2) { ?>
+												<div class="clearfix visible-xs-inline visible-sm-inline"></div>
+												<?php $portfolioCount = 0 ?>
+											<?php } ?>
+										<?php } ?>
+										<div class="clearfix visible-xs-block"></div>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			<?php } ?>
-		</div>
-		<div class="row">
-			<div class="col-xs-12">
-				<p class="text-right">
-					<a href="#pageTop">
-						<span class="link"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>&nbsp;back up</span>
-					</a>
-				</p>
+				<?php } ?>
 			</div>
-		</div>
-	</div>
-		
-	<footer class="footer">
-		<div class="container pageBorder">
 			<div class="row">
 				<div class="col-xs-12">
-					<hr>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-2">
-					<img align="middle" alt="SF Web Solution - Cube" src="../utils/images/sfwebsolution_cube-400x400.png" border="0" width="42x" height="42px">
-				</div>
-				<div class="col-xs-10">
 					<p class="text-right">
-						email: <a href="mailto:jay.brahms@sfwebsolution.com">jay.brahms@sfwebsolution.com</a><br>
-						phone: +1 (415) 646-6497
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-12">
-					<p class="text-center">
-						<span class="copyright">
-							Copyright SF Web Solution, Inc. All Rights reserved. Created by: SF Web Solution, Inc.
-						</span>
+						<a href="#pageTop">
+							<span class="link"><span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>&nbsp;back up</span>
+						</a>
 					</p>
 				</div>
 			</div>
 		</div>
-	</footer>
+			
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12">
+						<hr>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-2">
+						<img align="middle" alt="SF Web Solution - Cube" src="../utils/images/sfwebsolution_cube-400x400.png" border="0" width="42x" height="42px">
+					</div>
+					<div class="col-xs-10">
+						<p class="text-right">
+							email: <a href="mailto:jay.brahms@sfwebsolution.com">jay.brahms@sfwebsolution.com</a><br>
+							phone: +1 (415) 646-6497
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<p class="text-center">
+							<span class="copyright">
+								Copyright SF Web Solution, Inc. All Rights reserved. Created by: SF Web Solution, Inc.
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="../utils/jquery/jquery.js" type="text/javascript"></script>
