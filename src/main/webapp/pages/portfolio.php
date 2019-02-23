@@ -448,7 +448,7 @@ $portfolioCount = 0;
 			// set carousel
 			$("#carousel-portfolio").carousel("pause").removeData();
 			$("#carousel-portfolio").carousel({
-				interval:5000,
+				interval:false,
 				pause:false,
 				wrap:true,
 				keyboard:false
